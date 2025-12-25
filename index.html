@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Todo List</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Quizzzzzz</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+       <div class="header_wrapper"><h1>Quiz App</h1></div>
+      <!-- <h1 class="header">Quiz App</h1> -->
+      <div class="counter_wrapper flex_center">
+        <label for="progress_bar" id="progress_label">Question 1/5</label>
+        <div class="progress_bar" id="progress_bar">
+          <div class="progress_bar-line"></div>
+        </div>
+      </div>
+      <div class="timer_wrapper flex_center">
+        <span>Count Down</span>
+        <span class="timer">05:00</span>
+      </div>
 
-<div id="container">
-    <h1>به سوالات جواب درست دهید</h1>
-    <div id="display_box" class="flex-question">
-        <h2 id="question" class="">کدام گزینه درست است؟</h2>
-        <ul class="answers" >
-            <li id="answer-1" class="answer">گزینه 1</li>
-            <li id="answer-2" class="answer">گزینه 2</li>
-            <li id="answer-3" class="answer">گزینه 3</li>
-            <li id="answer-4" class="answer">گزینه 4</li>
-        </ul>
-        <button class="next disable">سوال بعدی</button>
+      <!-- question -->
+      <div class="question_wrapper">
+        <h2 id="question">اژدهای کومودو چه نوع حیوانی است؟</h2>
+      </div>
+      <!-- choices -->
+      <div class="choices_wrapper" id>
+        <div>
+          <p class="choice_prefix">A</p>
+          <p class="choice_text">مارمولک</p>
+        </div>
+        <div>
+          <p class="choice_prefix">B</p>
+          <p class="choice_text">سوسمار</p>
+        </div>
+        <div>
+          <p class="choice_prefix">C</p>
+          <p class="choice_text">بزمجه</p>
+        </div>
+        <div>
+          <p class="choice_prefix">D</p>
+          <p class="choice_text">آفتاب پرست</p>
+        </div>
+      </div>
     </div>
-</div>
 
-
-
-<script type="module" src="script.js" ></script>
-</body>
+    <script type="module" src="src/script.js"></script>
+  </body>
 </html>
-
-<!-- * button for start quiz -->
-<!-- <button id="start_quiz">Start</button>-->
-
-<!--<h2 id="question" class="">کدام گزینه درست است؟</h2>-->
-<!--<ul class="answers" >-->
-<!--    <li id="answer-1" class="answer">گزینه 1</li>-->
-<!--    <li id="answer-2" class="answer">گزینه 2</li>-->
-<!--    <li id="answer-3" class="answer">گزینه 3</li>-->
-<!--    <li id="answer-4" class="answer">گزینه 4</li>-->
-<!--</ul>-->
-
-<!-- * show scors and wrong answers -->
-<!--<div class="show-info">-->
-<!--    <div class="scores">-->
-<!--        <span>SCORE: </span>-->
-<!--        <span id="score">0</span>-->
-<!--    </div>-->
-<!--    <div class="wrongs">-->
-<!--        <span>WRONG: </span>-->
-<!--        <span id="wrong">0</span>-->
-<!--    </div>-->
-<!--</div>-->
