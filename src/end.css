@@ -51,6 +51,7 @@ body{
   display: block;
   width: 20rem;
   text-align: center;
+  cursor: pointer;
 }
 
 

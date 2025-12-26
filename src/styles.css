@@ -18,6 +18,18 @@
   --wrong: #bb2124;
 
   --text-color: #333333;
+
+  --font-xLarge: 4rem;
+  --font-large: 3rem;
+  --font-medium: 2rem;
+  --font-small: 1.5rem;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
+
 }
 
 html {
@@ -37,11 +49,11 @@ body {
   width: 95%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: auto;
 }
 .header_wrapper {
   grid-column: span 2 / span 2;
-  font-size: 3rem;
+  font-size: var(--font-large);
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -52,7 +64,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: var(--font-small);
 }
 .choices_wrapper {
   grid-column: span 2 / span 2;
@@ -60,12 +72,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   gap: 1rem;
 }
 .counter_wrapper,
 .timer_wrapper {
-  font-size: 2rem;
+  font-size: var(--font-medium);
 }
 
 .choices_wrapper > div {
@@ -74,7 +85,7 @@ body {
   width: 100%;
   height: 5rem;
   border: 1px solid var(--second-primary-color);
-  font-size: 3rem;
+  font-size: var(--font-large);
   overflow: hidden;
 }
 
@@ -82,7 +93,7 @@ body {
   border: 2px solid var(--second-primary-color);
   width: 16rem;
   height: 3rem;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-xs);
 }
 .progress_bar-line {
   width: 20%;
@@ -91,7 +102,7 @@ body {
   transition: all 1s ease-in-out;
 }
 .timer {
-  font-size: 4rem;
+  font-size: var(--font-xLarge);
   color: var(--second-primary-color);
 }
 .choice_prefix {
@@ -102,7 +113,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: var(--spacing-xs) 0;
 }
 
 .choices_wrapper > div:hover {
@@ -110,6 +121,11 @@ body {
   box-shadow: 0 0.4rem 1.4rem 0 var(--second-primary-color);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
+}
+
+.choices_wrapper>div:focus,
+.choices_wrapper>div:active{
+  background-color: green;
 }
 
 /* Component Classes */
