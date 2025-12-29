@@ -7,7 +7,7 @@ playAgainBtn.addEventListener("click", () => {
 });
 
 homeBtn.addEventListener("click", () => {
-  window.location.assign("index.html");
+  window.location.assign("../index.html");
 });
 
 finalScore.innerText = `Final Score: ${localStorage.getItem('finalScore')}`
